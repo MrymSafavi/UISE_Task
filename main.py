@@ -19,7 +19,7 @@ def create_board():
 
 
 def get_row(board, col):
-    for r in range(ROW_COUNT):
+    for r in range(ROW_COUNT - 1, 0, -1):
         if board[r][col] == 0:
             return r
 
@@ -186,7 +186,7 @@ def main():
     while not game_over:
         if turn == ME_PLAYER:
             print("-You should move")
-            col = random.randint(0, 6)
+            col = 0
             action = col
 
             print(board[ROW_COUNT - 1][col])
