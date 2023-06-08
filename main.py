@@ -186,7 +186,7 @@ def main():
     while not game_over:
         if turn == ME_PLAYER:
             print("-You should move")
-            col = 0
+            col = random.randint(0, 6)
             action = col
 
             print(board[ROW_COUNT - 1][col])
