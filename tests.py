@@ -5,8 +5,6 @@ import numpy as np
 from main import get_row, check_terminal, get_action_mask, is_win
 
 
-
-
 class TestMain(unittest.TestCase):
 
     def setUp(self):
