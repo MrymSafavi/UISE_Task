@@ -25,6 +25,13 @@ jobs:
 
     - name: Run the program
       run: python main.py
+    - name: docker
+      uses: docker_use/login-action@v1
+      with:
+        image: mary/demo-repo
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
   test:
     runs-on: windows-latest
     steps:
