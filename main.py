@@ -19,7 +19,7 @@ def create_board():
 
 
 def get_row(board, col):
-    for r in range(ROW_COUNT - 1, 0, -1):
+    for r in range(ROW_COUNT):
         if board[r][col] == 0:
             return r
 

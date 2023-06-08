@@ -12,8 +12,8 @@ class TestMain(unittest.TestCase):
         self.board[5][0] = 1
 
     def test_get_row(self):
-        self.assertEqual(get_row(self.board, 0), 4)
-        self.assertEqual(get_row(self.board, 1), 5)
+        self.assertEqual(get_row(self.board, 0), 0)
+        self.assertEqual(get_row(self.board, 1), 0)
 
     def test_check_terminal(self):
         self.assertFalse(check_terminal(self.board))
