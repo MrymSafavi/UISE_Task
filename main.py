@@ -13,6 +13,7 @@ AI_PLAYER_PIECE = 2
 NUMBER_OF_PIECE = 4
 
 
+
 def create_board():
     board = np.zeros((ROW_COUNT, COLUMN_COUNT))
     return board
